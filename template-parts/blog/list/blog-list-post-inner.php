@@ -53,7 +53,7 @@ $config = presscore_config();
 
 ?>
 
-<div class="blog-content wf-td" <?php echo presscore_get_post_content_style_for_blog_list( 'content' ); ?>>
+<div class="blog-content wf-td">
 
 	<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 

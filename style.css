@@ -55,3 +55,11 @@ body.single .single-postlike .entry-content,
     padding-left: 16pt;
     padding-right: 16pt;
 }
+
+/* Fix: align blog list cells to top so excerpts reach the bottom */
+.articles-list .blog-content.wf-td,
+.articles-list .blog-media.wf-td,
+.blog-content.wf-td,
+.blog-media.wf-td {
+	vertical-align: top;
+}
