@@ -1,0 +1,17 @@
+/.DS_Store
+/Thumbs.db
+node_modules/
+npm-debug.log*
+yarn-error.log*
+*.log
+.vscode/
+.idea/
+.sass-cache/
+*.zip
+The7-child.zip
+.cache/
+coverage/
+*.tmp
+.env
+/.phpunit.result.cache
+vendor/

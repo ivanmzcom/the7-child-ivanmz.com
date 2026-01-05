@@ -1,0 +1,57 @@
+/*
+Theme Name: the7dtchild
+Author: Dream-Theme
+Author URI: http://dream-theme.com/
+Description: The7 is perfectly scalable, performance and SEO optimized, responsive, retina ready multipurpose WordPress theme. It will fit every site – big or small. From huge corporate portals to studio or personal sites – The7 will become a great foundation for your next project!
+Version: 1.0.0
+License: This WordPress theme is comprised of two parts: (1) The PHP code and integrated HTML are licensed under the GPL license as is WordPress itself.  You will find a copy of the license text in the same directory as this text file. Or you can read it here: http://wordpress.org/about/gpl/ (2) All other parts of the theme including, but not limited to the CSS code, images, and design are licensed according to the license purchased. Read about licensing details here: http://themeforest.net/licenses/regular_extended
+Template: dt-the7
+*/
+
+/* Child: make featured image full width and responsive */
+.child-featured-image { width: 100%; margin-bottom: 24px; }
+.child-featured-image img.child-featured-img { display: block; width: 100%; height: auto; max-width: 100%; }
+
+/* If the theme adds default top margins to titles, ensure spacing looks correct */
+.child-featured-image + .blog-content .entry-title { margin-top: 0.5rem; }
+
+/* Position fancy date inside featured image */
+.child-featured-image { position: relative; }
+.child-featured-image .fancy-date { position: absolute; top: 12px; left: 12px; z-index: 3; }
+.child-featured-image .fancy-date a { color: #fff; }
+.child-featured-image .fancy-date .entry-month,
+.child-featured-image .fancy-date .entry-date,
+.child-featured-image .fancy-date .entry-year { color: inherit; }
+
+/* Force visibility and style of overlay date/category inside featured image */
+.child-featured-image .fancy-date,
+.child-featured-image .category-link {
+	display: block !important;
+	position: absolute !important;
+	z-index: 9999 !important;
+	background: rgba(0,0,0,0.55) !important;
+	color: #fff !important;
+	padding: 6px 8px !important;
+	border-radius: 3px !important;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.35) !important;
+}
+
+.child-featured-image .category-link { top: 12px; left: 12px; }
+.child-featured-image .fancy-date { top: 12px; right: 12px; left: auto; }
+.child-featured-image .fancy-date a { color: #fff !important; text-decoration: none !important; }
+.child-featured-image .fancy-date .entry-month,
+.child-featured-image .fancy-date .entry-date,
+.child-featured-image .fancy-date .entry-year { color: #fff !important; }
+
+/* Responsive: smaller overlays on narrow screens */
+@media (max-width: 600px) {
+	.child-featured-image .category-link,
+	.child-featured-image .fancy-date { padding: 4px 6px !important; font-size: 13px !important; }
+}
+
+/* Add 16pt horizontal padding to single post content */
+body.single .single-postlike .entry-content,
+.single-postlike .entry-content {
+    padding-left: 16pt;
+    padding-right: 16pt;
+}
