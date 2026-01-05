@@ -63,3 +63,12 @@ body.single .single-postlike .entry-content,
 .blog-media.wf-td {
 	vertical-align: top;
 }
+
+/* Gutenberg heading in sidebar: add 10px vertical padding */
+#sidebar .wp-block-heading,
+#sidebar .wp-block-heading > *,
+#sidebar .widget .wp-block-heading,
+.widget .wp-block-heading {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
